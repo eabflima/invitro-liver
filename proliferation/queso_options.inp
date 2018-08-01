@@ -1,0 +1,55 @@
+###############################################
+# UQ Environment
+###############################################
+#env_help              = anything
+env_numSubEnvironments = 1
+env_displayVerbosity   = 1
+env_subDisplayFileName = outputData/display
+env_subDisplayAllowAll = 1
+env_seed               = -1
+####################################################################
+# Cal Statistical inverse problem (ip)
+####################################################################
+cycle_cal_ip_ml_default_rawChain_size               = 10000
+cycle_cal_ip_ml_default_rawChain_dataOutputFileName = outputData/cal_rawChain_bgn
+cycle_cal_ip_ml_last_rawChain_dataOutputFileName = outputData/cal_rawChain_ml
+cycle_cal_ip_ml_last_rawChain_size                  = 10000
+#cycle_cal_ip_ml_default_minEffectiveSizeRatio       = 0.49
+#cycle_cal_ip_ml_default_maxEffectiveSizeRatio       = 0.51
+#cycle_cal_ip_ml_default_minRejectionRate            = 0.24
+#cycle_cal_ip_ml_default_maxRejectionRate            = 0.4
+#cycle_cal_ip_ml_default_putOutOfBoundsInChain       = 0
+###############################################
+# Val Statistical inverse problem (ip)
+###############################################
+cycle_val_ip_ml_default_rawChain_size               = 2000
+cycle_val_ip_ml_default_rawChain_dataOutputFileName = outputData/val_rawChain_ml
+cycle_val_ip_ml_last_rawChain_size                  = 10000
+#cycle_val_ip_ml_default_minEffectiveSizeRatio       = 0.49
+#cycle_val_ip_ml_default_maxEffectiveSizeRatio       = 0.51
+#cycle_val_ip_ml_default_minRejectionRate            = 0.24
+#cycle_val_ip_ml_default_maxRejectionRate            = 0.4
+#cycle_val_ip_ml_default_putOutOfBoundsInChain       = 0
+###############################################
+# Statistical forward problem (fp)
+###############################################
+fp_help                 = anything
+fp_computeSolution      = 1
+fp_computeCovariances   = 1
+fp_computeCorrelations  = 1
+fp_dataOutputFileName   = outputData/sfpOutput
+fp_dataOutputAllowedSet = 0 1
+###############################################
+# 'fp_': information for Monte Carlo algorithm
+###############################################
+fp_mc_help                 = anything
+fp_mc_dataOutputFileName   = outputData/sfpOutput
+fp_mc_dataOutputAllowedSet = 0 1
+fp_mc_pseq_dataOutputFileName   = outputData/sfpOutput_p_seq
+fp_mc_pseq_dataOutputAllowedSet = 0 1
+fp_mc_qseq_dataInputFileName    = . 
+fp_mc_qseq_size                 = 10000
+fp_mc_qseq_displayPeriod        = 200
+fp_mc_qseq_measureRunTimes      = 1
+fp_mc_qseq_dataOutputFileName   = outputData/sfpOutput_qoi_seq
+fp_mc_qseq_dataOutputAllowedSet = 0 1

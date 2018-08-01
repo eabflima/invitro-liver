@@ -1,0 +1,24 @@
+###############################################
+# UQ Environment
+###############################################
+#env_help              = anything
+env_numSubEnvironments = 1
+env_displayVerbosity   = 1
+env_subDisplayFileName = outputData/display
+env_subDisplayAllowAll = 1
+env_seed               = -1
+####################################################################
+# Cal Statistical inverse problem (ip)
+####################################################################
+cycle_cal_ip_ml_default_rawChain_size               = 2000
+cycle_cal_ip_ml_default_rawChain_dataOutputFileName = outputData/cal_rawChain_ml_inter
+cycle_cal_ip_ml_last_rawChain_dataOutputFileName    = outputData/cal_rawChain_ml
+cycle_cal_ip_ml_last_rawChain_size                  = 2000
+cycle_cal_ip_ml_restartOutput_levelPeriod           = 1
+cycle_cal_ip_ml_restartOutput_baseNameForFiles      = outputData/restart_cal
+#cycle_cal_ip_ml_restartInput_baseNameForFiles      = outputData/restart_cal
+#cycle_cal_ip_ml_default_minEffectiveSizeRatio      = 0.49
+#cycle_cal_ip_ml_default_maxEffectiveSizeRatio      = 0.51
+#cycle_cal_ip_ml_default_minRejectionRate           = 0.24
+#cycle_cal_ip_ml_default_maxRejectionRate           = 0.4
+#cycle_cal_ip_ml_default_putOutOfBoundsInChain      = 0
